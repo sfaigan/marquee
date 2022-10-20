@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="./script.js" type="text/javascript"></script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+  </head>
+  <body>
+    <div class="container">
+      <form class="names-form" method="post" onSubmit="return handleAddNames();">
+        <label for>Add names (one name per line):</label>
+        <textarea class="names-input" id="names-input" name="names-input" rows="1" cols="50"></textarea>
+        <button role="button" class="text-button" type="submit">Add Names</button>
+      </form>
+      <button role="button" class="text-button open-marquee-button" onClick="handleOpenMarquee()">Open Marquee</button>
+    </div>
+    <div class="container">
+      <table id="names-list">
+        <colgroup>
+          <col span="1" style="width: 85%;">
+          <col span="1" style="width: 15%;">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th style="text-align: center">
+              <button role="button" class="text-button" onClick="handleClearMarquee()">Delete All</button>
+            </th>
+          </tr>
+        </thead>
+        <tbody id="names-list-tbody">
+        </tbody>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+.name-container {
+	display: block;
+	border: 1px solid black;
+}
+
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #dddddd;
+  width: 100%;
+}
+
+td, th {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.delete-button {
+  font-size: 16px;
+}
+
+label {
+	margin-right: 1rem;
+}
+
+textarea {
+	margin-right: 1rem;
+}
+
+.text-button {
+	font-size: 16px;
+	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+	height: 100%;
+}
+
+.names-form {
+	margin: 1rem 0 1rem 0;
+}
+
+.names-form * {
+	vertical-align: top;
+}
+
+.open-marquee-button {
+	width: 100%;
+	min-height: 2.5rem;
+}
+
